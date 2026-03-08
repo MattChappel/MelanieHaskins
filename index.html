@@ -135,8 +135,8 @@
     </nav>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-audrey-white z-40 hidden flex-col items-center justify-center space-y-8 text-audrey-black uppercase tracking-widest text-lg opacity-0 transition-opacity duration-300">
-        <button id="close-menu-btn" class="absolute top-8 right-8 text-3xl focus:outline-none">
+    <div id="mobile-menu" class="fixed inset-0 bg-audrey-white z-[60] hidden flex-col items-center justify-center space-y-8 text-audrey-black uppercase tracking-widest text-lg opacity-0 transition-opacity duration-300">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-3xl focus:outline-none hover:text-tiffany-blue transition-colors">
             <i class="fa-solid fa-times"></i>
         </button>
         <a href="#home" class="mobile-link hover:text-tiffany-blue transition-colors">Home</a>
@@ -404,6 +404,8 @@
 
         function openMenu() {
             mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('flex'); // Add flex back to apply layout
+            
             // small delay to allow display block to apply before opacity transition
             setTimeout(() => {
                 mobileMenu.classList.remove('opacity-0');
@@ -415,6 +417,7 @@
             mobileMenu.classList.add('opacity-0');
             setTimeout(() => {
                 mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex'); // Remove flex so it hides completely
             }, 300); // match duration
             document.body.style.overflow = 'auto';
         }
@@ -428,5 +431,4 @@
         });
     </script>
 </body>
-
 </html>
