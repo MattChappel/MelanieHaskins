@@ -19,8 +19,9 @@
                     colors: {
                         'audrey-black': '#111111',
                         'audrey-white': '#FAFAFA',
-                        'tiffany-blue': '#ffc0cb', // Elegant Tiffany Blue accent
+                        'Melanie-Accent': '#ffc0cb', // Elegant Tiffany Blue accent
                         'soft-gray': '#EAEAEA',
+                        'onyx':'#353839'
                     },
                     fontFamily: {
                         'serif': ['"Playfair Display"', 'serif'],
@@ -90,7 +91,7 @@
             height: 1px;
             bottom: 0;
             left: 0;
-            background-color: #81D8D0;
+            background-color: #353839;
             transform-origin: bottom right;
             transition: transform 0.3s ease-out;
         }
@@ -111,12 +112,12 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased selection:bg-tiffany-blue selection:text-white">
+<body class="font-sans antialiased selection:bg-Melanie-Accent selection:text-white">
 
     <!-- Sticky Navigation -->
     <nav id="navbar" class="fixed w-full z-50 top-0 py-6 px-6 md:px-12 flex justify-between items-center text-white">
         <a href="#home" class="logo-text font-serif text-2xl md:text-3xl tracking-wider uppercase font-semibold">
-            Melanie <span class="text-tiffany-blue italic">Haskins</span>
+            Melanie <span class="text-onyx italic">Haskins</span>
         </a>
         
         <!-- Desktop Menu -->
@@ -136,21 +137,19 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-audrey-white z-[60] hidden flex-col items-center justify-center space-y-8 text-audrey-black uppercase tracking-widest text-lg opacity-0 transition-opacity duration-300">
-        <button id="close-menu-btn" class="absolute top-8 right-8 text-3xl focus:outline-none hover:text-tiffany-blue transition-colors">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-3xl focus:outline-none hover:text-Melanie-Accent transition-colors">
             <i class="fa-solid fa-times"></i>
         </button>
-        <a href="#home" class="mobile-link hover:text-tiffany-blue transition-colors">Home</a>
-        <a href="#about" class="mobile-link hover:text-tiffany-blue transition-colors">About</a>
-        <a href="#portfolio" class="mobile-link hover:text-tiffany-blue transition-colors">Portfolio</a>
-        <a href="#testimonials" class="mobile-link hover:text-tiffany-blue transition-colors">Testimonials</a>
-        <a href="#contact" class="mobile-link hover:text-tiffany-blue transition-colors">Contact</a>
+        <a href="#home" class="mobile-link hover:text-Melanie-Accent transition-colors">Home</a>
+        <a href="#about" class="mobile-link hover:text-Melanie-Accent transition-colors">About</a>
+        <a href="#portfolio" class="mobile-link hover:text-Melanie-Accent transition-colors">Portfolio</a>
+        <a href="#testimonials" class="mobile-link hover:text-Melanie-Accent transition-colors">Testimonials</a>
+        <a href="#contact" class="mobile-link hover:text-Melanie-Accent transition-colors">Contact</a>
     </div>
 
     <!-- Hero Section -->
     <header id="home" class="hero-bg h-screen flex flex-col items-center justify-center text-center px-4">
-        <p class="text-tiffany-blue uppercase tracking-[0.3em] text-sm md:text-base mb-4 font-light drop-shadow-md">
-            Coldwell Banker Professional Group
-        </p>
+
         <h1 class="text-white font-serif text-5xl md:text-7xl lg:text-8xl mb-6 drop-shadow-lg">
             Elegance in <br> <span class="italic font-light">Real Estate</span>
         </h1>
@@ -168,7 +167,7 @@
             
             <!-- Chic Portrait / Image Placeholder -->
             <div class="relative img-hover-zoom">
-                <div class="absolute inset-0 bg-tiffany-blue transform translate-x-4 translate-y-4 -z-10"></div>
+                <div class="absolute inset-0 bg-Melanie-Accent transform translate-x-4 translate-y-4 -z-10"></div>
                 <!-- Updated src to the provided image and added an aspect ratio crop -->
                 <img src="MelanieHaskinsPinkHeadShot.jpg" alt="Melanie Haskins" class="w-full aspect-[4/5] object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
             </div>
@@ -176,7 +175,7 @@
             <!-- Bio Text -->
             <div class="flex flex-col justify-center">
                 <h2 class="font-serif text-4xl md:text-5xl mb-6 text-audrey-black">Melanie Haskins</h2>
-                <h3 class="text-tiffany-blue uppercase tracking-widest text-sm font-bold mb-8">Real Estate Broker & Designer</h3>
+                <h3 class="text-Melanie-Accent uppercase tracking-widest text-sm font-bold mb-8">Real Estate Broker & Designer</h3>
                 
                 <div class="font-light text-gray-700 space-y-5 leading-relaxed">
                     <p>
@@ -201,9 +200,9 @@
     <!-- Portfolio / Featured Property Section -->
     <section id="portfolio" class="py-24 bg-audrey-black text-white px-6 md:px-16 lg:px-24">
         <div class="max-w-7xl mx-auto text-center mb-16">
-            <p class="text-tiffany-blue uppercase tracking-[0.2em] text-sm mb-4">Featured Masterpiece</p>
+            <p class="text-Melanie-Accent uppercase tracking-[0.2em] text-sm mb-4">Featured Property</p>
             <h2 class="font-serif text-4xl md:text-5xl mb-6">1655 Gem Drive</h2>
-            <div class="w-24 h-px bg-tiffany-blue mx-auto mb-6"></div>
+            <div class="w-24 h-px bg-Melanie-Accent mx-auto mb-6"></div>
             <p class="font-light text-gray-300 max-w-2xl mx-auto leading-relaxed">
                 A testament to lifestyle-focused planning. This exceptional property was entirely conceptualized, designed, constructed, expertly staged, and successfully sold by Melanie Haskins.
             </p>
@@ -213,19 +212,19 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Replace these placeholder Unsplash images with actual Pixieset links -->
             <div class="img-hover-zoom h-80 relative group">
-                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="1655 Gem Drive Exterior" class="w-full h-full object-cover">
+                <img src="1655Gem-16.jpg" alt="1655 Gem Drive Exterior" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span class="font-serif italic text-xl">Exterior Elegance</span>
                 </div>
             </div>
             <div class="img-hover-zoom h-80 relative group">
-                <img src="https://images.unsplash.com/photo-1600566753086-00f18efc2294?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="1655 Gem Drive Interior" class="w-full h-full object-cover">
+                <img src="1655Gem-27.jpg" alt="1655 Gem Drive Interior" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span class="font-serif italic text-xl">Bespoke Interiors</span>
                 </div>
             </div>
             <div class="img-hover-zoom h-80 relative group lg:col-span-1 md:col-span-2">
-                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="1655 Gem Drive Details" class="w-full h-full object-cover">
+                <img src="1655Gem-24.jpg" alt="1655 Gem Drive Details" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span class="font-serif italic text-xl">Staged to Perfection</span>
                 </div>
@@ -233,7 +232,7 @@
         </div>
         
         <div class="text-center mt-12">
-            <a href="https://isaiahmichaelmiller.pixieset.com/1655gemdrive/" target="_blank" rel="noopener noreferrer" class="inline-block border border-tiffany-blue text-tiffany-blue px-8 py-3 uppercase tracking-widest text-sm hover:bg-tiffany-blue hover:text-audrey-black transition-all duration-300">
+            <a href="https://isaiahmichaelmiller.pixieset.com/1655gemdrive/" target="_blank" rel="noopener noreferrer" class="inline-block border border-Melanie-Accent text-Melanie-Accent px-8 py-3 uppercase tracking-widest text-sm hover:bg-Melanie-Accent hover:text-audrey-black transition-all duration-300">
                 View Full Gallery
             </a>
         </div>
@@ -243,9 +242,9 @@
     <section id="testimonials" class="py-24 px-6 md:px-16 lg:px-24 bg-audrey-white border-y border-gray-100">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <p class="text-tiffany-blue uppercase tracking-[0.2em] text-sm mb-4">Client Love</p>
+                <p class="text-Melanie-Accent uppercase tracking-[0.2em] text-sm mb-4">Client Love</p>
                 <h2 class="font-serif text-4xl md:text-5xl mb-6">Testimonials</h2>
-                <div class="w-24 h-px bg-tiffany-blue mx-auto mb-6"></div>
+                <div class="w-24 h-px bg-Melanie-Accent mx-auto mb-6"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -257,7 +256,7 @@
                         <p class="font-serif text-gray-700 text-lg leading-relaxed mb-8 italic">
                             "Melanie Haskins was warm, knowledgable, and down to earth. Her experience with home construction gave us the reassurance we needed to complete our remodel process. Melanie’s genuine care and dedication to our journey has made an overwhelming project feel easy for us."
                         </p>
-                        <h4 class="text-tiffany-blue uppercase tracking-widest text-sm font-bold">— Grace and Larry P.</h4>
+                        <h4 class="text-Melanie-Accent uppercase tracking-widest text-sm font-bold">— Grace and Larry P.</h4>
                     </div>
                 </div>
 
@@ -268,7 +267,7 @@
                         <p class="font-serif text-gray-700 text-lg leading-relaxed mb-8 italic">
                             "Moving to another state is such a stressful process. We were so grateful for Melanie Haskins and her help getting our house ready to sell. She listened to my needs, helped us with staging, and coordinated contractors to get all the painting finished before we listed. She was always willing to go the extra mile and even brought us a home cooked meal when our kitchen was packed so we didn’t have to worry about food after a long day of work."
                         </p>
-                        <h4 class="text-tiffany-blue uppercase tracking-widest text-sm font-bold">— Lorraine P.</h4>
+                        <h4 class="text-Melanie-Accent uppercase tracking-widest text-sm font-bold">— Lorraine P.</h4>
                     </div>
                 </div>
 
@@ -279,7 +278,7 @@
                         <p class="font-serif text-gray-700 text-lg leading-relaxed mb-8 italic">
                             "Working with Melanie was an absolute pleasure - her combination of construction and design expertise sets her apart in the real estate world. She’s not only great at finding solutions and answers, but her ability to negotiate and understand the ins and outs of property makes her an invaluable asset for any homebuyer or seller."
                         </p>
-                        <h4 class="text-tiffany-blue uppercase tracking-widest text-sm font-bold">— Scott & Katelyn M.</h4>
+                        <h4 class="text-Melanie-Accent uppercase tracking-widest text-sm font-bold">— Scott & Katelyn M.</h4>
                     </div>
                 </div>
 
@@ -290,7 +289,7 @@
                         <p class="font-serif text-gray-700 text-lg leading-relaxed mb-8 italic">
                             "Melanie is one of those people you just trust right away. She’s honest, calm under pressure, and incredibly easy to work with. She has a way of putting people at ease, and with her background in residential construction and eye for design, she offers a unique set of skills to anyone looking to buy a home."
                         </p>
-                        <h4 class="text-tiffany-blue uppercase tracking-widest text-sm font-bold">— Ann C.</h4>
+                        <h4 class="text-Melanie-Accent uppercase tracking-widest text-sm font-bold">— Ann C.</h4>
                     </div>
                 </div>
 
@@ -305,26 +304,33 @@
             <!-- Contact Details -->
             <div class="flex flex-col justify-center">
                 <h2 class="font-serif text-4xl md:text-5xl mb-6 text-audrey-black">Let's Connect</h2>
-                <div class="w-16 h-px bg-tiffany-blue mb-8"></div>
-                <p class="font-light text-gray-600 mb-10 leading-relaxed">
+                <div class="w-16 h-px bg-Melanie-Accent mb-8"></div>
+                <p class="font-light text-gray-600 mb-8 leading-relaxed">
                     Whether you are looking to buy, sell, or build, I am here to provide expert guidance and a seamless experience. 
                 </p>
 
+                <div class="mb-10 text-gray-700">
+                    <p class="font-serif text-xl font-semibold text-audrey-black">Melanie Haskins</p>
+                    <p class="text-Melanie-Accent uppercase tracking-widest text-xs font-bold mb-2 mt-1">Real Estate Broker</p>
+                    <p class="font-light">Coldwell Banker Professional Group</p>
+                    <p class="font-light text-sm text-gray-500 mt-1 uppercase tracking-wider">License: 201239671 OR</p>
+                </div>
+
                 <div class="space-y-6 font-light text-lg">
                     <p class="flex items-center">
-                        <i class="fa-solid fa-phone text-tiffany-blue mr-4 w-6 text-center"></i>
-                        <a href="tel:+1-541-391-3959" class="hover:text-tiffany-blue transition-colors">Direct: (541) 391-3959</a>
+                        <i class="fa-solid fa-phone text-Melanie-Accent mr-4 w-6 text-center"></i>
+                        <a href="tel:+1-541-391-3959" class="hover:text-Melanie-Accent transition-colors">Direct: (541) 391-3959</a>
                     </p>
                     <p class="flex items-center">
-                        <i class="fa-solid fa-building text-tiffany-blue mr-4 w-6 text-center"></i>
-                        <a href="tel:+1-541-868-8444" class="hover:text-tiffany-blue transition-colors">Office: (541) 868-8444</a>
+                        <i class="fa-solid fa-building text-Melanie-Accent mr-4 w-6 text-center"></i>
+                        <a href="tel:+1-541-868-8444" class="hover:text-Melanie-Accent transition-colors">Office: (541) 868-8444</a>
                     </p>
                     <p class="flex items-center">
-                        <i class="fa-solid fa-envelope text-tiffany-blue mr-4 w-6 text-center"></i>
-                        <a href="mailto:melanie@melaniegracerealestate.com" class="hover:text-tiffany-blue transition-colors">melanie@melaniegracerealestate.com</a>
+                        <i class="fa-solid fa-envelope text-Melanie-Accent mr-4 w-6 text-center"></i>
+                        <a href="mailto:melanie@melaniegracerealestate.com" class="hover:text-Melanie-Accent transition-colors">melanie@melaniegracerealestate.com</a>
                     </p>
                     <p class="flex items-start mt-4">
-                        <i class="fa-solid fa-location-dot text-tiffany-blue mr-4 w-6 text-center mt-1"></i>
+                        <i class="fa-solid fa-location-dot text-Melanie-Accent mr-4 w-6 text-center mt-1"></i>
                         <span>
                             <strong class="font-normal block">Coldwell Banker Professional Group</strong>
                             2741 Shadow View Drive<br>
@@ -339,17 +345,17 @@
                 <form onsubmit="event.preventDefault(); alert('Thank you for your inquiry. Melanie will be in touch shortly.');" class="space-y-6">
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Name</label>
-                        <input type="text" required class="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-tiffany-blue transition-colors font-serif text-lg">
+                        <input type="text" required class="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-Melanie-Accent transition-colors font-serif text-lg">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Email</label>
-                        <input type="email" required class="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-tiffany-blue transition-colors font-serif text-lg">
+                        <input type="email" required class="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-Melanie-Accent transition-colors font-serif text-lg">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Message</label>
-                        <textarea rows="4" required class="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-tiffany-blue transition-colors font-serif text-lg resize-none"></textarea>
+                        <textarea rows="4" required class="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-Melanie-Accent transition-colors font-serif text-lg resize-none"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-audrey-black text-white uppercase tracking-widest text-sm py-4 hover:bg-tiffany-blue hover:text-audrey-black transition-all duration-300">
+                    <button type="submit" class="w-full bg-audrey-black text-white uppercase tracking-widest text-sm py-4 hover:bg-Melanie-Accent hover:text-audrey-black transition-all duration-300">
                         Send Inquiry
                     </button>
                 </form>
@@ -361,16 +367,16 @@
     <!-- Footer -->
     <footer class="bg-audrey-black text-gray-400 py-12 px-6 text-center font-light text-sm border-t border-gray-800">
         <div class="max-w-4xl mx-auto flex flex-col items-center">
-            <h2 class="font-serif text-2xl text-white mb-6 tracking-wider uppercase">Melanie Grace</h2>
+            <h2 class="font-serif text-2xl text-white mb-6 tracking-wider uppercase">Melanie Grace Haskins</h2>
             
             <div class="flex space-x-6 mb-8 text-xl">
                 <!-- Social placeholders -->
-                <a href="#" class="hover:text-tiffany-blue transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-tiffany-blue transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-tiffany-blue transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-Melanie-Accent transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-Melanie-Accent transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-Melanie-Accent transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
 
-            <p class="mb-4">© <span id="year"></span> Coldwell Banker Professional Group. All Rights Reserved.</p>
+            <p class="mb-4">© <span id="year"></span> Melanie Grace Haskins - All Rights Reserved.</p>
             <p class="text-xs text-gray-600 max-w-2xl mx-auto leading-relaxed">
                 Coldwell Banker and the Coldwell Banker logo are trademarks of Coldwell Banker Real Estate LLC. The Coldwell Banker System is comprised of company owned offices which are owned by a subsidiary of Anywhere Advisors LLC and franchised offices which are independently owned and operated.
             </p>
@@ -433,4 +439,3 @@
 </body>
 
 </html>
-
