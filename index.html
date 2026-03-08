@@ -59,7 +59,15 @@
             background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.6)), url('bannerimage.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            /* Default to scroll on mobile to fix the extreme zoom bug in iOS Safari */
+            background-attachment: scroll; 
+        }
+
+        @media (min-width: 768px) {
+            .hero-bg {
+                /* Re-enable the elegant fixed parallax effect on desktop sizes */
+                background-attachment: fixed;
+            }
         }
 
         /* Navbar Transition */
