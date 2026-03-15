@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Melanie Haskins</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'audrey-black': '#111111',
+                        'audrey-white': '#FAFAFA',
+                        'Melanie-Accent': '#ffc0cb', 
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-audrey-white text-audrey-black selection:bg-Melanie-Accent selection:text-white h-screen flex flex-col items-center justify-center px-6">
+
+    <div class="max-w-xl text-center">
+        <div class="w-16 h-px bg-Melanie-Accent mx-auto mb-8"></div>
+        
+        <h1 class="font-serif text-4xl md:text-5xl mb-6 text-audrey-black">Thank You</h1>
+        
+        <p class="font-light text-gray-600 text-lg md:text-xl leading-relaxed mb-12">
+            Thank you so much for contacting me. I have received your message and will get back to you ASAP.
+        </p>
+        
+        <a href="index.html" class="inline-block bg-audrey-black text-white uppercase tracking-widest text-sm px-10 py-4 hover:bg-Melanie-Accent hover:text-audrey-black transition-all duration-300 shadow-sm">
+            Click here to return to website
+        </a>
+    </div>
+
+</body>
+</html>
